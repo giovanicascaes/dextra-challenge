@@ -1,0 +1,20 @@
+.home_pagination-wrapper {
+  @apply flex flex-row justify-center;
+}
+
+.home_pagination-page {
+  @apply px-4 mx-1 py-2 cursor-pointer;
+
+  &:not(.home_pagination-active) {
+    @apply hover:(bg-gray-200);
+  }
+}
+
+.home_pagination-active {
+  @apply cursor-default bg-gray-400;
+}
+
+.home_pagination-disabled,
+.home_pagination-active .home_pagination-link {
+  @apply cursor-default;
+}
